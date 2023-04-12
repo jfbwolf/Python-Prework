@@ -32,6 +32,8 @@ def max_num_in_a_list(a_list):
 print(max_num_in_a_list([5, 12, 387, 62]))   
 
 
+# 4 Write a function to return if a given year is a leap year.
+
 a_year = input("What year would you like to check?")
 def is_a_leap_year(year):
     if (year % 400 == 0) or (year % 4 == 0 and year% 100 != 0):
