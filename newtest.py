@@ -21,14 +21,26 @@ if is_a_leap_year(int(a_year)):
 else:
     print("It is not a leap year.")
 
-a_list = [1,2,4,5]
-b_list = [1,2,3,4]
-def is_consecutive(a_list):
-    for i in range(len(a_list)-len(b_list)-1):
-        if a_list[i:len(b_list)+i]==b_list:
-            return True
-    return False
-if is_consecutive(a_list):
-    print("It is not a consecutive list.")
-if is_consecutive(b_list):
-        print("It is a consecutive list.")
+
+def is_consecutive():
+    my_list = [1,2,3,4]
+    new_list = [1,2,4,5]
+    for i in range(my_list[0], my_list[0]+len(my_list)):
+        new_list.append(i)
+    print(new_list)
+    if my_list == new_list:
+    
+     print("This is a consecutive list.")
+    else:
+     print("this is not a consecutive")
+
+
+
+
+
+    
+
+
+
+
+
